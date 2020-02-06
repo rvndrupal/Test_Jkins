@@ -109,4 +109,22 @@ Notas todos los proyectos deben tener la carpeta Librerias
 
 
 
+#########################################
+Cursod e Jenkins 2
+
+Crear variable de entorno de jenkins
+
+Ejecutar este comando muyimportante
+
+cd  C:\Program Files\Jenkins
+
+java -Dhudson.model.DirectoryBrowserSupport.CSP=-jar "jenkins.war"
+
+java -jar jenkins.war --httpPort=8086
+
+java  -jar  "jenkins.war"  --httpPort=8086  -->igual que el primero
+
+-->instalar el plugin robotframework
+
+
 
