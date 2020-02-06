@@ -83,6 +83,8 @@ Configurar Python variable.
 ########Configuración Variables del Proyecto##########
 Set Path=%Python_Home%;%Path%
 Librerias/Lib.bat
+rmdir  /s /q  output
+rmdir  output
 
 La ruta ya como queda despues para ejecutar
 
