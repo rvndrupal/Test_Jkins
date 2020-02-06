@@ -33,23 +33,27 @@ TC001 Obtener valores de Excel
     [Tags]  CasoUno
     [Documentation]     Obtener valores de Excel DOS
     Click  //a[@href='/index.php?option=com_users&view=registration&Itemid=588']
+    Texto   (//input[@type='text'])[1]  rodrigo
+    Texto   (//input[@type='text'])[2]  villanueva
+    Texto   (//input[@type='password'])[1]  Documentation
+    Dormir  3
 
-    ${rows}=   recursos.Leer Numero de filas  Hoja1
+    # ${rows}=   recursos.Leer Numero de filas  Hoja1
 
-    : FOR  ${i}  IN RANGE     1  ${rows}+1
-    \   ${nombre}=   Leer celda  Hoja1  ${i}  1
-    \   ${username}=   Leer celda  Hoja1  ${i}  2
-    \   ${password}=   Leer celda  Hoja1  ${i}  3
-    \   ${confirmpass}=   Leer celda  Hoja1  ${i}  4
-    \   ${email}=   recursos.Leer celda  Hoja1  ${i}  5
-    \   ${confirmemail}=   Leer celda  Hoja1  ${i}  6
-    \   Texto   (//input[@type='text'])[1]  ${nombre}
-    \   Texto   (//input[@type='text'])[2]  ${username}
-    \   Texto   (//input[@type='password'])[1]  ${password}
-    \   Texto   (//input[@type='password'])[2]  ${confirmpass}
-    \   Texto   (//input[@type='email'])[1]  ${email}
-    \   Texto   (//input[@type='email'])[2]  ${confirmemail}
-    \   Click   //a[contains(@title,'Cancel')]
+    # : FOR  ${i}  IN RANGE     1  ${rows}+1
+    # \   ${nombre}=   Leer celda  Hoja1  ${i}  1
+    # \   ${username}=   Leer celda  Hoja1  ${i}  2
+    # \   ${password}=   Leer celda  Hoja1  ${i}  3
+    # \   ${confirmpass}=   Leer celda  Hoja1  ${i}  4
+    # \   ${email}=   recursos.Leer celda  Hoja1  ${i}  5
+    # \   ${confirmemail}=   Leer celda  Hoja1  ${i}  6
+    # \   Texto   (//input[@type='text'])[1]  ${nombre}
+    # \   Texto   (//input[@type='text'])[2]  ${username}
+    # \   Texto   (//input[@type='password'])[1]  ${password}
+    # \   Texto   (//input[@type='password'])[2]  ${confirmpass}
+    # \   Texto   (//input[@type='email'])[1]  ${email}
+    # \   Texto   (//input[@type='email'])[2]  ${confirmemail}
+    # \   Click   //a[contains(@title,'Cancel')]
 
 
 
