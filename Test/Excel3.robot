@@ -2,7 +2,7 @@
 Library     SeleniumLibrary
 Resource    recursos.robot
 Library     Collections
-Library     ReadData.py
+
 Test Setup      Abrir setup  ${url}  chrome
 Test Teardown   Cerrar setup
 
@@ -33,7 +33,7 @@ TC001 Obtener valores de Excel
     [Documentation]     Obtener valores de Excel DOS
     Click  //a[@href='/index.php?option=com_users&view=registration&Itemid=588']
 
-    ${rows}=   recursos.Leer numero de filas  Hoja1
+    ${rows}=   recursos.Leer Numero de filas  Hoja1
 
     : FOR  ${i}  IN RANGE     1  ${rows}+1
     \   ${nombre}=   Leer celda  Hoja1  ${i}  1
