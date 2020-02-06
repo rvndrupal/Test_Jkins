@@ -2,6 +2,7 @@
 Library     SeleniumLibrary
 Resource    recursos.robot
 Library     Collections
+Library     ReadData.py
 Test Setup      Abrir setup  ${url}  chrome
 Test Teardown   Cerrar setup
 
