@@ -86,7 +86,11 @@ Librerias/Lib.bat
 
 La ruta ya como queda despues para ejecutar
 
- robot -d results  -i CasoUno  .\Excel3.robot
+#robot -d results  -i CasoUno  .\Excel3.robot
+
+robot --listener allure_robotframework Test
+
+-->salida del allure   output/allure
 
 
 
