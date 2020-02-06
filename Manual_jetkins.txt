@@ -80,5 +80,10 @@ Configurar Python variable.
 9.-Nombre Allure y poner la ruta   C:\Allure\bin
 
 
+########Configuración Variables del Proyecto##########
+Set Path=%Python_Home%;%Path%
+Librerias/Lib.bat
+
+
 
 
