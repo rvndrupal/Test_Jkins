@@ -87,3 +87,11 @@ Librerias/Lib.bat
 
 
 
+
+
+############# Notas  ##################3
+Notas todos los proyectos deben tener la carpeta Librerias
+
+
+
+
