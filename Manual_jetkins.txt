@@ -91,6 +91,10 @@ La ruta ya como queda despues para ejecutar
 robot --listener allure_robotframework Test
 exit 0
 
+https://github.com/jenkinsci/allure-plugin/issues/205
+
+
+
 -->salida del allure   output/allure
 
 
