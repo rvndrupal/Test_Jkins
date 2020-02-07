@@ -86,6 +86,14 @@ TC005 Quinto Caso
     Texto  (//input[@type='text'])[1]  rodrigo
     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
 
+TC006 Sexto Caso   
+    [Tags]  Sexto
+    [Documentation]     Obtener Sexto prueba
+    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+    Texto  (//input[@type='text'])[1]  rodrigo
+    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+
+
    
     
     
