@@ -79,6 +79,13 @@ TC004 Cuarto Caso pruebas
     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
    
 
+TC005 Quinto Caso   
+    [Tags]  Quinto
+    [Documentation]     Obtener Quinta prueba
+    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+    Texto  (//input[@type='text'])[1]  rodrigo
+    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+
    
     
     
