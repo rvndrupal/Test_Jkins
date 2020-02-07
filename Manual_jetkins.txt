@@ -118,7 +118,7 @@ Ejecutar este comando muyimportante
 
 cd  C:\Program Files\Jenkins
 
-java -Dhudson.model.DirectoryBrowserSupport.CSP=-jar "jenkins.war"
+java -Dhudson.model.DirectoryBrowserSupport.CSP= -jar "jenkins.war"   #Ojo con el espacio -jar
 
 java -jar jenkins.war --httpPort=8086
 
