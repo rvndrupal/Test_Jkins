@@ -37,6 +37,7 @@ TC001 Obtener valores de Excel
     Texto   (//input[@type='text'])[1]  rodrigo
     Texto   (//input[@type='text'])[2]  villanueva
     Texto   (//input[@type='password'])[1]  Documentation
+    Resultado  .2  ${dir}  Ok paso
     
 
     # ${rows}=   recursos.Leer Numero de filas  Hoja1
@@ -57,41 +58,41 @@ TC001 Obtener valores de Excel
     # \   Click   //a[contains(@title,'Cancel')]
 
 
-TC002 Segundo demo  
-    [Tags]  CasoDos
-    [Documentation]     Obtener segunda prueba
-    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
-    Texto  (//input[@type='text'])[1]  rodrigo
-    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+# TC002 Segundo demo  
+#     [Tags]  CasoDos
+#     [Documentation]     Obtener segunda prueba
+#     Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+#     Texto  (//input[@type='text'])[1]  rodrigo
+#     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
 
-TC003 Tercer Caso pruebas  
-    [Tags]  Casotres
-    [Documentation]     Obtener tercer prueba 
-    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
-    Texto  (//input[@type='text'])[1]  rodrigo
-    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+# TC003 Tercer Caso pruebas  
+#     [Tags]  Casotres
+#     [Documentation]     Obtener tercer prueba 
+#     Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+#     Texto  (//input[@type='text'])[1]  rodrigo
+#     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
    
-TC004 Cuarto Caso pruebas  
-    [Tags]  CasoCuatro
-    [Documentation]     Obtener Cuarto prueba 
-    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
-    Texto  (//input[@type='text'])[1]  rodrigo
-    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+# TC004 Cuarto Caso pruebas  
+#     [Tags]  CasoCuatro
+#     [Documentation]     Obtener Cuarto prueba 
+#     Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+#     Texto  (//input[@type='text'])[1]  rodrigo
+#     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
    
 
-TC005 Quinto Caso   
-    [Tags]  Quinto
-    [Documentation]     Obtener Quinta prueba
-    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
-    Texto  (//input[@type='text'])[1]  rodrigo
-    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+# TC005 Quinto Caso   
+#     [Tags]  Quinto
+#     [Documentation]     Obtener Quinta prueba
+#     Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+#     Texto  (//input[@type='text'])[1]  rodrigo
+#     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
 
-TC006 Sexto Caso   
-    [Tags]  Sexto
-    [Documentation]     Obtener Sexto prueba
-    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
-    Texto  (//input[@type='text'])[1]  rodrigo
-    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+# TC006 Sexto Caso   
+#     [Tags]  Sexto
+#     [Documentation]     Obtener Sexto prueba
+#     Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+#     Texto  (//input[@type='text'])[1]  rodrigo
+#     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
 
 
    

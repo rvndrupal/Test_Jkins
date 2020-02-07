@@ -202,7 +202,7 @@ Resultado
     [Arguments]   ${tiempo}   ${dir}    ${print}
     sleep       ${tiempo}   
     Capture Page Screenshot     ${dir}
-    log to console    ${print} 
+    Log    ${print} 
 
 Tabulador
     Press Keys    TAB   '\ue004'
