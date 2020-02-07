@@ -65,12 +65,18 @@ TC002 Segundo demo
     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
 
 TC003 Tercer Caso pruebas  
-    [Tags]  CasoDos
-    [Documentation]     Obtener tercer prueba prueba
+    [Tags]  Casotres
+    [Documentation]     Obtener tercer prueba 
     Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
     Texto  (//input[@type='text'])[1]  rodrigo
     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
    
+TC004 Cuarto Caso pruebas  
+    [Tags]  CasoCuatro
+    [Documentation]     Obtener Cuarto prueba 
+    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+    Texto  (//input[@type='text'])[1]  rodrigo
+    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
    
 
    
