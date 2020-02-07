@@ -36,7 +36,7 @@ TC001 Obtener valores de Excel
     Click  //a[@href='/index.php?option=com_users&view=registration&Itemid=588']
     Texto   (//input[@type='text'])[1]  rodrigo
     Texto   (//input[@type='text'])[2]  villanueva
-    Texto   (//input[@type='password'])[1]  Documentation
+    Texto   (//input[@type='password'])[]  Documentation
     Resultado  .2  ${dir}/Captura.png    Ok paso
     
 
