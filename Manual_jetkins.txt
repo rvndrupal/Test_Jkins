@@ -125,6 +125,7 @@ java -jar jenkins.war --httpPort=8086
 java  -jar  "jenkins.war"  --httpPort=8086  -->igual que el primero
 
 -->instalar el plugin robotframework
+--> ir al puerto 8080
 
 
 
