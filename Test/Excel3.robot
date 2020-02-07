@@ -37,7 +37,7 @@ TC001 Obtener valores de Excel
     Texto   (//input[@type='text'])[1]  rodrigo
     Texto   (//input[@type='text'])[2]  villanueva
     Texto   (//input[@type='password'])[1]  Documentation
-    Resultado  .2  ${dir}/Captura.png    Ok paso
+    Resultado  .2   Captura1.png    Ok paso
     
 
     # ${rows}=   recursos.Leer Numero de filas  Hoja1
