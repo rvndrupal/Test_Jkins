@@ -18,7 +18,7 @@ Test Teardown   Cerrar setup
 
 *** Variable ***
 ${url}    https://thetestingworld.com/
-${dir}    /Imagenes
+${dir}    Imagenes
 
 
 *** Keywords ***
