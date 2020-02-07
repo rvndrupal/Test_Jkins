@@ -18,7 +18,7 @@ Test Teardown   Cerrar setup
 
 *** Variable ***
 ${url}    https://thetestingworld.com/
-${dir}    .\Imagenes
+${dir}    /Imagenes
 
 
 *** Keywords ***
@@ -37,7 +37,7 @@ TC001 Obtener valores de Excel
     Texto   (//input[@type='text'])[1]  rodrigo
     Texto   (//input[@type='text'])[2]  villanueva
     Texto   (//input[@type='password'])[1]  Documentation
-    Resultado  .2  ${dir}\Camptura.png    Ok paso
+    Resultado  .2  ${dir}/Captura.png    Ok paso
     
 
     # ${rows}=   recursos.Leer Numero de filas  Hoja1
