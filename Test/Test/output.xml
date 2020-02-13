@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.6 on win32)" generated="20200213 16:44:19.617" rpa="false">
+<suite id="s1" name="Excel3" source="C:\Test_Jkins\Test\Test\Excel3.robot">
+<test id="s1-t1" name="TC001 Obtener valores de Excel">
+<kw name="Abrir setup" library="recursos" type="setup">
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Abrir navegador" library="recursos">
+<arguments>
+<arg>${url}</arg>
+<arg>${nav}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:20.892" level="INFO">Opening browser 'chrome' to base url 'https://thetestingworld.com/'.</msg>
+<status status="PASS" starttime="20200213 16:44:20.891" endtime="20200213 16:44:31.472"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:20.891" endtime="20200213 16:44:31.474"></status>
+</kw>
+<kw name="Maximizar" library="recursos">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200213 16:44:31.475" endtime="20200213 16:44:32.662"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:31.474" endtime="20200213 16:44:32.662"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:20.872" endtime="20200213 16:44:32.663"></status>
+</kw>
+<kw name="Click" library="recursos">
+<arguments>
+<arg>//a[@href='/index.php?option=com_users&amp;view=registration&amp;Itemid=588']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${arg1}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:32.664" level="INFO">Clicking element 'xpath=//a[@href='/index.php?option=com_users&amp;view=registration&amp;Itemid=588']'.</msg>
+<status status="PASS" starttime="20200213 16:44:32.663" endtime="20200213 16:44:34.185"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:32.663" endtime="20200213 16:44:34.186"></status>
+</kw>
+<kw name="Texto" library="recursos">
+<arguments>
+<arg>(//input[@type='text'])[1]</arg>
+<arg>rodrigo</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:34.187" level="INFO">Typing text 'rodrigo' into text field 'xpath=(//input[@type='text'])[1]'.</msg>
+<status status="PASS" starttime="20200213 16:44:34.187" endtime="20200213 16:44:34.322"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:34.186" endtime="20200213 16:44:34.324"></status>
+</kw>
+<kw name="Texto" library="recursos">
+<arguments>
+<arg>(//input[@type='text'])[2]</arg>
+<arg>villanueva</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:34.325" level="INFO">Typing text 'villanueva' into text field 'xpath=(//input[@type='text'])[2]'.</msg>
+<status status="PASS" starttime="20200213 16:44:34.324" endtime="20200213 16:44:34.416"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:34.324" endtime="20200213 16:44:34.417"></status>
+</kw>
+<kw name="Texto" library="recursos">
+<arguments>
+<arg>(//input[@type='password'])[1]</arg>
+<arg>Documentation</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:34.419" level="INFO">Typing text 'Documentation' into text field 'xpath=(//input[@type='password'])[1]'.</msg>
+<status status="PASS" starttime="20200213 16:44:34.418" endtime="20200213 16:44:34.522"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:34.418" endtime="20200213 16:44:34.523"></status>
+</kw>
+<kw name="Resultado" library="recursos">
+<arguments>
+<arg>.2</arg>
+<arg>Captura1.png</arg>
+<arg>Ok paso</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${tiempo}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:34.724" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20200213 16:44:34.523" endtime="20200213 16:44:34.724"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${dir}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:35.107" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Captura1.png"&gt;&lt;img src="Captura1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200213 16:44:34.727" endtime="20200213 16:44:35.107"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${print}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:35.109" level="INFO">Ok paso</msg>
+<status status="PASS" starttime="20200213 16:44:35.108" endtime="20200213 16:44:35.109"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:34.523" endtime="20200213 16:44:35.110"></status>
+</kw>
+<kw name="Cerrar setup" library="recursos" type="teardown">
+<kw name="Cerrar Todos" library="recursos">
+<kw name="Dormir" library="recursos">
+<arguments>
+<arg>.5</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${arg1}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:35.613" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200213 16:44:35.112" endtime="20200213 16:44:35.613"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:35.112" endtime="20200213 16:44:35.614"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200213 16:44:35.614" endtime="20200213 16:44:37.693"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:35.111" endtime="20200213 16:44:37.694"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:35.111" endtime="20200213 16:44:37.695"></status>
+</kw>
+<doc>Obtener valores de Excel DOS</doc>
+<tags>
+<tag>CasoUno</tag>
+</tags>
+<status status="PASS" starttime="20200213 16:44:20.871" endtime="20200213 16:44:37.696" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC002 Segundo demo">
+<kw name="Abrir setup" library="recursos" type="setup">
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Abrir navegador" library="recursos">
+<arguments>
+<arg>${url}</arg>
+<arg>${nav}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:37.709" level="INFO">Opening browser 'chrome' to base url 'https://thetestingworld.com/'.</msg>
+<status status="PASS" starttime="20200213 16:44:37.708" endtime="20200213 16:44:44.554"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:37.708" endtime="20200213 16:44:44.555"></status>
+</kw>
+<kw name="Maximizar" library="recursos">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200213 16:44:44.556" endtime="20200213 16:44:45.689"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:44.555" endtime="20200213 16:44:45.689"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:37.707" endtime="20200213 16:44:45.690"></status>
+</kw>
+<kw name="Click" library="recursos">
+<arguments>
+<arg>//a[@href='/index.php?option=com_users&amp;view=login&amp;Itemid=587']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${arg1}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:45.691" level="INFO">Clicking element 'xpath=//a[@href='/index.php?option=com_users&amp;view=login&amp;Itemid=587']'.</msg>
+<status status="PASS" starttime="20200213 16:44:45.691" endtime="20200213 16:44:47.233"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:45.690" endtime="20200213 16:44:47.234"></status>
+</kw>
+<kw name="Texto" library="recursos">
+<arguments>
+<arg>(//input[@type='text'])[1]</arg>
+<arg>rodrigo</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:47.236" level="INFO">Typing text 'rodrigo' into text field 'xpath=(//input[@type='text'])[1]'.</msg>
+<status status="PASS" starttime="20200213 16:44:47.235" endtime="20200213 16:44:47.350"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:47.235" endtime="20200213 16:44:47.351"></status>
+</kw>
+<kw name="Resultado" library="recursos">
+<arguments>
+<arg>2</arg>
+<arg>${dir}/Login1.png</arg>
+<arg>Se imprime el resultado</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${tiempo}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:49.353" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200213 16:44:47.352" endtime="20200213 16:44:49.353"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${dir}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:49.700" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Imagenes/Login1.png"&gt;&lt;img src="Imagenes/Login1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200213 16:44:49.355" endtime="20200213 16:44:49.701"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${print}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:49.702" level="INFO">Se imprime el resultado</msg>
+<status status="PASS" starttime="20200213 16:44:49.702" endtime="20200213 16:44:49.702"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:47.352" endtime="20200213 16:44:49.703"></status>
+</kw>
+<kw name="Cerrar setup" library="recursos" type="teardown">
+<kw name="Cerrar Todos" library="recursos">
+<kw name="Dormir" library="recursos">
+<arguments>
+<arg>.5</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${arg1}</arg>
+</arguments>
+<msg timestamp="20200213 16:44:50.205" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200213 16:44:49.704" endtime="20200213 16:44:50.205"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:49.704" endtime="20200213 16:44:50.206"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200213 16:44:50.206" endtime="20200213 16:44:52.296"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:49.704" endtime="20200213 16:44:52.297"></status>
+</kw>
+<status status="PASS" starttime="20200213 16:44:49.703" endtime="20200213 16:44:52.298"></status>
+</kw>
+<doc>Obtener segunda prueba</doc>
+<tags>
+<tag>CasoDos</tag>
+</tags>
+<status status="PASS" starttime="20200213 16:44:37.705" endtime="20200213 16:44:52.299" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200213 16:44:19.678" endtime="20200213 16:44:52.305"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">CasoDos</stat>
+<stat pass="1" fail="0">CasoUno</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Excel3">Excel3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
