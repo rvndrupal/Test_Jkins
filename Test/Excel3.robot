@@ -58,12 +58,12 @@ TC001 Obtener valores de Excel
     # \   Click   //a[contains(@title,'Cancel')]
 
 
-# TC002 Segundo demo  
-#     [Tags]  CasoDos
-#     [Documentation]     Obtener segunda prueba
-#     Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
-#     Texto  (//input[@type='text'])[1]  rodrigo
-#     Resultado  2  ${dir}/Login1.png  Se imprime el resultado
+TC002 Segundo demo  
+    [Tags]  CasoDos
+    [Documentation]     Obtener segunda prueba
+    Click    //a[@href='/index.php?option=com_users&view=login&Itemid=587']
+    Texto  (//input[@type='text'])[1]  rodrigo
+    Resultado  2  ${dir}/Login1.png  Se imprime el resultado
 
 # TC003 Tercer Caso pruebas  
 #     [Tags]  Casotres
